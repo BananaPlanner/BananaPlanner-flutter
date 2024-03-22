@@ -1,3 +1,4 @@
+import 'package:banana_planner/pages/Test.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Text("hello"),
+      body: SafeArea(
+        child: Test(),
+      ),
     );
   }
 }
